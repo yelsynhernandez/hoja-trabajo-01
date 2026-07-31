@@ -10,6 +10,8 @@ Curso: Desarrollo web
 
 Sección: A
 
-Descripción: Pequeño promocional para visitar el lago de Güija, ubicado en Jutiapa. Escrito completamente con HTML
+Descripción: Pequeño promocional para visitar el lago de Güija, ubicado en Jutiapa. Escrito completamente con HTML.
 
-Sitio web: https://hojatrabajo01.netlify.app/
+**Actualización: Se integra CSS al proyecto
+
+Sitio web: https://hojatrabajo2.netlify.app/
