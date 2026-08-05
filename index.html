@@ -27,18 +27,57 @@
     </ul>
 
     <h2 id="galeria">Galería de Imágenes</h2>
+    <p><em>Haz clic en cualquier imagen para verla en tamaño grande.</em></p>
     <table border="1" cellpadding="10" cellspacing="0">
         <tr>
-            <td><img src="imagenes/lago1.jpg" alt="Vista panorámica del Lago de Güija" width="400" height="300"></td>
-            <td><img src="imagenes/lago2.jpg" alt="Aguas cristalinas del lago" width="400" height="300"></td>
-            <td><img src="imagenes/lago3.jpg" alt="Sendero ecológico" width="400" height="300"></td>
+            <td><img class="imagen-galeria" src="imagenes/lago1.jpg" alt="Vista panorámica del Lago de Güija" width="400" height="300" data-titulo="Paseos en el lago" data-descripcion="Disfrua de un viaje en tranquilo y aprecia las maravillas del lago"></td>
+            <td><img class="imagen-galeria" src="imagenes/lago2.jpg" alt="Aguas cristalinas del lago" width="400" height="300" data-titulo="Paseos grupales" data-descripcion="Si no quieres viajar solo puedes reunirte con tus amigos en un paseo y tomar fotografías fantásticas."></td>
+            <td><img class="imagen-galeria" src="imagenes/lago3.jpg" alt="Sendero ecológico" width="400" height="300" data-titulo="Sendero al pie del lago" data-descripcion="Si temes a estar en el agua siempre puedes escoger por dar un recorrido al pie del lago y conocer el entorno en cada paso."></td>
         </tr>
         <tr>
-            <td><img src="imagenes/lago4.jpg" alt="Lanchas en el lago" width="400" height="300"></td>
-            <td><img src="imagenes/lago5.jpg" alt="Flora tropical" width="400" height="300"></td>
-            <td><img src="imagenes/lago6.jpg" alt="Atardecer en el lago" width="400" height="300"></td>
+            <td><img class="imagen-galeria" src="imagenes/lago4.jpg" alt="Lanchas en el lago" width="400" height="300" data-titulo="¿Prefieres más emoción?" data-descripcion="Puedes optar por visitar el centro turístico cercano con toboganes y piscinas."></td>
+            <td><img class="imagen-galeria" src="imagenes/lago5.jpg" alt="Flora tropical" width="400" height="300" data-titulo="¿Quieres una toma épica?" data-descripcion="Puedes traer tu equipo fotogrático para capturar momentos únicos."></td>
+            <td><img class="imagen-galeria" src="imagenes/lago6.jpg" alt="Atardecer en el lago" width="400" height="300" data-titulo="Disfruta de los atardeceres" data-descripcion="Al caer la tarde puedes disfrutar de una excelente vista mientras el sol bajo por el horizonte"></td>
         </tr>
     </table>
+
+    <!-- Modal (visor de imagen en grande) -->
+    <div id="modal" class="oculto">
+        <div id="modal-contenido">
+            <img id="modal-imagen" src="" alt="Imagen ampliada">
+            <h3 id="modal-titulo"></h3>
+            <p id="modal-descripcion"></p>
+            <button type="button" id="btn-cerrar-modal">Cerrar</button>
+        </div>
+    </div>
+
+    <h2>Calculadora de Cotización de la Excursión</h2>
+    <p><em>Completa los datos y presiona el botón para conocer el precio estimado.</em></p>
+    <form>
+        <label for="asistentes">Número de asistentes:</label><br>
+        <input type="number" id="asistentes" value="1" min="1"><br>
+
+        <label for="paquete">Tipo de paquete:</label><br>
+        <select id="paquete">
+            <option value="300">Paquete Básico - Q300 por persona</option>
+            <option value="450">Paquete Premium - Q450 por persona</option>
+        </select><br>
+
+        <label>Servicios adicionales:</label><br>
+        <input type="checkbox" id="transporte" value="100"> Transporte incluido (+Q100 por persona)<br>
+        <input type="checkbox" id="alimentacion" value="100"> Alimentación (+Q100 por persona)<br>
+        <input type="checkbox" id="equipo" value="50"> Equipo de excursión (+Q50 por persona)<br>
+
+        <button type="button" id="btn-calcular">Calcular Total</button>
+    </form>
+    <p id="resultado-cotizacion"></p>
+
+    <h2>Opiniones de nuestros visitantes</h2>
+    <div id="testimonio">
+        <p id="testimonio-texto"></p>
+        <p id="testimonio-nombre"></p>
+    </div>
+    <button type="button" id="btn-otra-opinion">Ver otra opinión</button>
 
     <br>
 
@@ -52,5 +91,6 @@
         <p><strong>Página web desarrollada por:</strong> Yelsyn Adrid Hernández Crúz</p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>

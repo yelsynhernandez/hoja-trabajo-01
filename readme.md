@@ -14,4 +14,13 @@ Descripción: Pequeño promocional para visitar el lago de Güija, ubicado en Ju
 
 **Actualización: Se integra CSS al proyecto
 
-Sitio web: https://hojatrabajo2.netlify.app/
+**Actualización: Se integra JavaScript al proyecto (Hoja de Trabajo 3)
+
+Funcionalidades agregadas (todo el código en `js/script.js`):
+- Galería interactiva con modal en `index.html`.
+- Calculadora de cotización de la excursión en `index.html`.
+- Filtro/buscador de actividades en tiempo real en `actividades.html`.
+- Confirmación interactiva de reservación/contacto en `itinerarios.html`.
+- Sección de opiniones/testimonios aleatorios en `index.html`.
+
+Sitio web: https://hojatrabajo3.netlify.app/
