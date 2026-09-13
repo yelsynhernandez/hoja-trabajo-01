@@ -3,94 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoja de Trabajo 1</title>
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Lago de Güija - Excursiones Turísticas</title>
 </head>
 <body>
-
-    <h1>Escápate al Lago de Güija: Donde la Historia Navega Contigo</h1>
-
-    <h2>Descripción del Lugar</h2>
-    <p>
-        ¿Imaginas despertar con el suave vaivén del agua y el canto de las garzas? Te invitamos a una aventura única en el Lago de Güija, un tesoro escondido en la frontera entre Guatemala y El Salvador, donde la naturaleza y el misterio maya se funden en un solo horizonte. 
-    </p>
-    <h3>Amanecer con sabor a tradición</h3>
-    <p>
-        Tu experiencia comienza en la comodidad de un hotel a la orilla del lago, como el turicentro San Juan La Isla en Asunción Mita.  Disfruta de un desayuno caliente frente al espejo de agua, deleitándote con un tradicional caldo de gallina o una mojarra frita recién sacada del lago, mientras el sol ilumina los volcanes circundantes.
-    </p>
-
-    <h2>Índice</h2>
-    <ul>
-        <li><a href="#galeria">Galería de Imágenes</a></li>
-        <li><a href="itinerarios.html">Itinerarios</a></li>
-        <li><a href="actividades.html">Actividades</a></li>
-    </ul>
-
-    <h2 id="galeria">Galería de Imágenes</h2>
-    <p><em>Haz clic en cualquier imagen para verla en tamaño grande.</em></p>
-    <table border="1" cellpadding="10" cellspacing="0">
-        <tr>
-            <td><img class="imagen-galeria" src="imagenes/lago1.jpg" alt="Vista panorámica del Lago de Güija" width="400" height="300" data-titulo="Paseos en el lago" data-descripcion="Disfrua de un viaje en tranquilo y aprecia las maravillas del lago"></td>
-            <td><img class="imagen-galeria" src="imagenes/lago2.jpg" alt="Aguas cristalinas del lago" width="400" height="300" data-titulo="Paseos grupales" data-descripcion="Si no quieres viajar solo puedes reunirte con tus amigos en un paseo y tomar fotografías fantásticas."></td>
-            <td><img class="imagen-galeria" src="imagenes/lago3.jpg" alt="Sendero ecológico" width="400" height="300" data-titulo="Sendero al pie del lago" data-descripcion="Si temes a estar en el agua siempre puedes escoger por dar un recorrido al pie del lago y conocer el entorno en cada paso."></td>
-        </tr>
-        <tr>
-            <td><img class="imagen-galeria" src="imagenes/lago4.jpg" alt="Lanchas en el lago" width="400" height="300" data-titulo="¿Prefieres más emoción?" data-descripcion="Puedes optar por visitar el centro turístico cercano con toboganes y piscinas."></td>
-            <td><img class="imagen-galeria" src="imagenes/lago5.jpg" alt="Flora tropical" width="400" height="300" data-titulo="¿Quieres una toma épica?" data-descripcion="Puedes traer tu equipo fotogrático para capturar momentos únicos."></td>
-            <td><img class="imagen-galeria" src="imagenes/lago6.jpg" alt="Atardecer en el lago" width="400" height="300" data-titulo="Disfruta de los atardeceres" data-descripcion="Al caer la tarde puedes disfrutar de una excelente vista mientras el sol bajo por el horizonte"></td>
-        </tr>
-    </table>
-
-    <!-- Modal (visor de imagen en grande) -->
-    <div id="modal" class="oculto">
-        <div id="modal-contenido">
-            <img id="modal-imagen" src="" alt="Imagen ampliada">
-            <h3 id="modal-titulo"></h3>
-            <p id="modal-descripcion"></p>
-            <button type="button" id="btn-cerrar-modal">Cerrar</button>
-        </div>
-    </div>
-
-    <h2>Calculadora de Cotización de la Excursión</h2>
-    <p><em>Completa los datos y presiona el botón para conocer el precio estimado.</em></p>
-    <form>
-        <label for="asistentes">Número de asistentes:</label><br>
-        <input type="number" id="asistentes" value="1" min="1"><br>
-
-        <label for="paquete">Tipo de paquete:</label><br>
-        <select id="paquete">
-            <option value="300">Paquete Básico - Q300 por persona</option>
-            <option value="450">Paquete Premium - Q450 por persona</option>
-        </select><br>
-
-        <label>Servicios adicionales:</label><br>
-        <input type="checkbox" id="transporte" value="100"> Transporte incluido (+Q100 por persona)<br>
-        <input type="checkbox" id="alimentacion" value="100"> Alimentación (+Q100 por persona)<br>
-        <input type="checkbox" id="equipo" value="50"> Equipo de excursión (+Q50 por persona)<br>
-
-        <button type="button" id="btn-calcular">Calcular Total</button>
-    </form>
-    <p id="resultado-cotizacion"></p>
-
-    <h2>Opiniones de nuestros visitantes</h2>
-    <div id="testimonio">
-        <p id="testimonio-texto"></p>
-        <p id="testimonio-nombre"></p>
-    </div>
-    <button type="button" id="btn-otra-opinion">Ver otra opinión</button>
-
-    <br>
-
-    <h2>Otros Enlaces de Interés</h2>
-    <ul>
-        <li><a href="itinerarios.html">Ver itinerario de la excursión</a></li>
-        <li><a href="actividades.html">Ver lista de actividades</a></li>
-    </ul>
-    
-    <footer>
-        <p><strong>Página web desarrollada por:</strong> Yelsyn Adrid Hernández Crúz</p>
-    </footer>
-
-    <script src="js/script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
